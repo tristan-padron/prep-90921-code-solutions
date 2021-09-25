@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Conditionals</title>
+</head>
+
+<body>
+  <script>
+    function findAge(x) {
+      if (x < 18) {
+        return 'A child';
+      } else {
+        return 'An Adult';
+      }
+    }
+    var age = findAge(25);
+    console.log(age);
+
+    function findScore(x) {
+      if (x >= 70) {
+        return 'Congrats you received a passing grade!';
+      } else {
+        return 'Oh no you failed!';
+      }
+    }
+    var student1Score = findScore(96);
+    console.log(student1Score);
+
+    function findScore2(x) {
+      if (x < 60) {
+        return 'F';
+      } else if (x < 70) {
+        return 'D';
+      } else if (x < 80) {
+        return 'C';
+      } else if (x < 90) {
+        return 'B';
+      } else if (x < 100) {
+        return 'A';
+      } else {
+        return 'A++';
+      }
+    }
+    var student2Score = findScore2(102);
+    console.log(student2Score);
+
+    function findTheSeason(x) {
+      if (x === 'summer') {
+        return 'it is hot today';
+      } else if (x === 'spring') {
+        return 'the flowers are blooming';
+      } else if (x === 'autumn') {
+        return 'the leaves are changing colors';
+      } else if (x === 'winter') {
+        return "it's cold today";
+      } else {
+        return 'please enter a valid season';
+      }
+    }
+    var season = findTheSeason('spring');
+    console.log(season);
+
+    function findDay(x) {
+      if (x === 'saturday' || x === 'sunday') {
+        return 'have a good weekend!';
+      } else {
+        return "It's a weekday!";
+      }
+    }
+    var dayOfTheWeek = findDay('thursday');
+    console.log(dayOfTheWeek);
+  </script>
+</body>
+
+</html>
